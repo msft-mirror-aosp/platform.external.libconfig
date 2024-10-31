@@ -18,6 +18,8 @@ cc_library_host_static {
     srcs: [
         "lib/*.c"
     ],
+    // Upstream explicitly chooses C99.
+    c_std: "gnu99",
     cflags: [
         "-Wno-unused-parameter",
         "-DHAVE_USELOCALE",
